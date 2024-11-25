@@ -1,10 +1,13 @@
-# 🚀 Introduction à Python – Guide Ludique et Pratique
-
+---
+title: "Cours Python"
+author: "Ariel"
+date: "2024-11-25"
+---
 ## 🌟 1. Les Bases des Fonctions Python
 
 ### 📌 Affichage et interactions utilisateur
 ```python
-print("Hello, Python!")  # Afficher un message
+print("Hello, Python!") # Afficher un message
 ```
 
 - **`print()`** : Sert à afficher des informations dans la console.
@@ -361,35 +364,7 @@ sort()	    # Trie une liste, et la garde trier
 ```
 ---
 
-## 🌟 8. Fonctions
-
-### 📌 Définir une fonction :
-```python
-def saluer(nom):
-    print("Bonjour, " + nom + " !")
-```
-
-### 📌 Appeler une fonction :
-```python
-saluer("Alice")  # Bonjour, Alice !
-```
-
----
-
-## 🌟 9. Bibliothèques
-Une bibliothèque est un ensemble de fonctions prédéfinies que vous pouvez importer dans votre code.
-
-### 📌 Exemple avec `random` :
-```python
-import random
-
-nombre_aleatoire = random.randint(1, 10)  # Générer un nombre entre 1 et 10
-print(nombre_aleatoire)
-```
-
----
-
-## 🌟 10. Tuples (listes constantes)
+## 🌟 8. Tuples (listes constantes)
 
 ### 📌 Simple declaration
 ```python
@@ -408,8 +383,8 @@ print(banana) # banana
 (x, y) = fruits_permanents
 print(x) # banana
 ```
-
-## 🌟 10. Sets (listes sans doublon)
+---
+## 🌟 9. Sets (listes sans doublon)
 Cette structure de donnee ne permet pas les doublons.
 
 ### 📌 Simple declaration
@@ -430,8 +405,8 @@ mon_set = {1, 2, 3}
 mon_set.remove(2)  # Supprime 2
 print(mon_set)  # {1, 3}
 ```
-
-## 🌟 11. Dictionary (liste cle : valeur)
+---
+## 🌟 10. Dictionary (liste cle : valeur)
 
 ### 📌 Simple declaration
 ```python
@@ -509,28 +484,3 @@ car = {
 car.popitem()
 # { "brand": "Ford", "model": "Mustang" }
 ```
-
-
-
-# Pendu
-# pre-requis
-# a. banque de mot, selectionner un mot au hasard
-# b. l'utilisateur a 5 essaies
-
-# 1. utilisateur propose une lettre
-# 2. verifier si cette lettre existe dans le mot
-# 3. S'il a trouve alors placer les lettres dans le mot
-# 4. Sinon enlever une vie
-# 5. verifier s'il a trouver tout les lettres du mot
-
-import random
-
-banque_de_mots = [
-    "amour", "bonheur", "château", "danse", "étoile",
-    "fleur", "guitare", "histoire", "imaginaire", "joie",
-    "lumière", "montagne", "nature", "océan", "papillon",
-    "quartz", "rêve", "soleil", "trésor", "univers",
-    "vent", "wagon", "xylophone", "yacht", "zèbre"
-]
-
-guess_word = random.choice(banque_de_mots)
